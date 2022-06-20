@@ -9,6 +9,7 @@ This app calculates expense in a week.
 ## Features
 
 Adding and deleting transactions.
+
 Chart for expenditure.
 
 ## Getting Started
