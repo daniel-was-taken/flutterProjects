@@ -1,6 +1,15 @@
-# personalexp
+# Personal Expense App 
 
-A new Flutter project.
+Flutter project.
+
+## Summary
+
+This app calculates expense in a week.
+
+## Features
+
+Adding and deleting transactions.
+Chart for expenditure.
 
 ## Getting Started
 
