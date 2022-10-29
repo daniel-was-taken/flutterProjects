@@ -1,6 +1,7 @@
 # Recipe App in Flutter
 
 Developed by
+
 https://github.com/daniel-was-taken
 
 https://github.com/divyesh0406
