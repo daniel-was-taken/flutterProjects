@@ -186,7 +186,6 @@ class _CartScreenState extends State<CartScreen> {
   dynamic sum;
 
   _getTotal() {
-
     qtyCounts.forEach((key, value) {
       if (allPricedIngredients.containsKey(key)) {
         var cal = allPricedIngredients[key] * qtyCounts[key];
@@ -264,18 +263,6 @@ class _CartScreenState extends State<CartScreen> {
                                         children: [
                                           IconButton(
                                             onPressed: () {
-                                              listForQty.add(key);
-                                              print(listForQty);
-                                              setState(() {
-                                                _updateListItems();
-                                              });
-                                            },
-                                            icon: Icon(
-                                              Icons.add,
-                                            ),
-                                          ),
-                                          IconButton(
-                                            onPressed: () {
                                               listForQty.remove(key);
                                               print(listForQty);
                                               setState(() {
@@ -284,6 +271,18 @@ class _CartScreenState extends State<CartScreen> {
                                             },
                                             icon: Icon(
                                               Icons.remove,
+                                            ),
+                                          ),
+                                          IconButton(
+                                            onPressed: () {
+                                              listForQty.add(key);
+                                              print(listForQty);
+                                              setState(() {
+                                                _updateListItems();
+                                              });
+                                            },
+                                            icon: Icon(
+                                              Icons.add,
                                             ),
                                           ),
                                         ],
