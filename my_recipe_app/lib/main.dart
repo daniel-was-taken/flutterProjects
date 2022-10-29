@@ -13,7 +13,8 @@ import 'package:flutter/material.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
-  runApp(MyApp());
+  runApp(
+    MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -21,7 +22,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'FlutterChat',
+      debugShowCheckedModeBanner: false,
+      title: 'FlutterRecipeApp',
       theme: ThemeData(
         primarySwatch: Colors.pink,
         backgroundColor: Colors.pink,
