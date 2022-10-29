@@ -1,6 +1,13 @@
-# my_recipe_app
+# Recipe App in Flutter
 
-A new Flutter project.
+Users can
+1. Add their own recipes
+2. View recipes uploaded by other users 
+3. Purchase any ingredients from the recipe screen
+4. View the ingredients added into the cart
+5. View the Order history after their purchase
+
+
 
 ## Getting Started
 
