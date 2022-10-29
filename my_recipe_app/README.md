@@ -47,4 +47,6 @@ samples, guidance on mobile development, and a full API reference.
 Cart screen initially does not display the total amount of the cart.
      After updating qty in the cart screen the total amount is correctly displayed
      
+Must favorite once for every user to get price in the meal detail screen
+     
 Code can be improve significantly.
