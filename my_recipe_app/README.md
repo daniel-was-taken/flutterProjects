@@ -1,5 +1,15 @@
 # Recipe App in Flutter
 
+Developed by
+
+https://github.com/daniel-was-taken
+
+https://github.com/divyesh0406
+
+https://github.com/PremTatkari
+
+
+
 Users can
 1. Add their own recipes
 2. View recipes uploaded by other users 
@@ -15,6 +25,10 @@ Setup Firebase for the project by adding the google-services.json
 View more at : https://firebase.flutter.dev/docs/manual-installation/android/
 
 In the terminal run: flutter pub get
+
+In cart screen update Razorpay details in options[]
+
+View more at :  https://razorpay.com/docs/payments/payment-gateway/flutter-integration/standard/build-integration/
 
 
 This project is a starting point for a Flutter application.
@@ -32,5 +46,7 @@ samples, guidance on mobile development, and a full API reference.
 
 Cart screen initially does not display the total amount of the cart.
      After updating qty in the cart screen the total amount is correctly displayed
+     
+Must favorite once for every user to get price in the meal detail screen
      
 Code can be improve significantly.
