@@ -41,7 +41,7 @@ class _MealDetailScreenState extends State<MealDetailScreen> {
       margin: EdgeInsets.all(10),
       padding: EdgeInsets.all(10),
       height: 200,
-      width: 300,
+      width: 350,
       child: child,
     );
   }
@@ -89,6 +89,12 @@ class _MealDetailScreenState extends State<MealDetailScreen> {
 
   var _favoriteMeal = '';
 
+  _someFunction() {
+    return Scaffold(
+      body: CircularProgressIndicator(),
+    );
+  }
+
   _getFavorite() {
     try {
       FirebaseFirestore.instance
@@ -103,10 +109,9 @@ class _MealDetailScreenState extends State<MealDetailScreen> {
         setState(() {});
       });
     } catch (e) {
-      setState(() {});
+      //setState(() {});
     }
-
-    //_setFavorite();
+    //setState(() {});
   }
 
   _updateFavorites() {
@@ -121,6 +126,7 @@ class _MealDetailScreenState extends State<MealDetailScreen> {
 //add this
 
   Map<dynamic, dynamic> allPricedIngredients = {};
+
   _getPrice() {
     final pricedIngredientsRef = FirebaseFirestore.instance
         .collection("ingredients")
@@ -254,11 +260,13 @@ class _MealDetailScreenState extends State<MealDetailScreen> {
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceEvenly,
                                 children: [
-                                  Text(
-                                      'Rs. ${_getPricedIngredients(snapshot.data!['ingredients'][index])}'),
+                                  Text(snapshot.data!['ingredients'][index] ==
+                                          null
+                                      ? 'Loading'
+                                      : 'Rs. ${_getPricedIngredients(snapshot.data!['ingredients'][index])}'),
                                   SizedBox(
                                     width: MediaQuery.of(context).size.width *
-                                        0.15,
+                                        0.10,
                                   ),
                                   IconButton(
                                     tooltip: 'Add to Cart',

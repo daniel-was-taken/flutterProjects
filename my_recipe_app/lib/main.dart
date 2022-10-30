@@ -22,8 +22,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+
       
-      debugShowCheckedModeBanner: false,
       title: 'FlutterRecipeApp',
       theme: ThemeData(
         primarySwatch: Colors.pink,
@@ -51,6 +51,7 @@ class MyApp extends StatelessWidget {
           return AuthScreen();
         },
       ),
+      //debugShowCheckedModeBanner: false,
     );
   }
 }

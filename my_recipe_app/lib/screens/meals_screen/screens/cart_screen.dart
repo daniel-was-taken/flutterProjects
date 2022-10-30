@@ -54,12 +54,12 @@ class _CartScreenState extends State<CartScreen> {
   void _openCheckOut() async {
     print('testing payemtn');
     var options = {
-      'key': ' enter razorpay key ',
+      'key': 'rzp_test_zhKZn116brpEdc',
       'amount': 100 * sum,
       'name': 'test name',
       'description': 'test des',
       'prefill': {
-        'contact': ' 9876543210 ',
+        'contact': '9876543210',
         'email': 'testing@gmail.com',
       },
     };
