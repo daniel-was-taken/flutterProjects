@@ -54,7 +54,7 @@ class _CartScreenState extends State<CartScreen> {
   void _openCheckOut() async {
     print('testing payemtn');
     var options = {
-      'key': 'rzp_test_zhKZn116brpEdc',
+      'key': ' your key ',
       'amount': 100 * sum,
       'name': 'test name',
       'description': 'test des',
