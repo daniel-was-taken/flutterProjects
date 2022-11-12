@@ -59,8 +59,8 @@ class _CartScreenState extends State<CartScreen> {
       'name': 'test name',
       'description': 'test des',
       'prefill': {
-        'contact': '9876543210',
-        'email': 'testing@gmail.com',
+        'contact': ' contact no ',
+        'email': ' email address ',
       },
     };
     try {
