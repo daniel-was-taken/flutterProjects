@@ -16,6 +16,7 @@ https://github.com/PremTatkari
 3. Purchase any ingredients from the recipe screen
 4. View the ingredients added into the cart
 5. View the Order history after their purchase
+6. Favorite recipes made by other users
 
 ## Known Issues
 
