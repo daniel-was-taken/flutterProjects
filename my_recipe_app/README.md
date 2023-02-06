@@ -11,8 +11,7 @@ https://github.com/PremTatkari
 
 ## Screenshots
 
-
-![OrdersPage](https://user-images.githubusercontent.com/97611290/217009763-223f617f-2904-4d4a-a2a5-b83dbe84cd78.png)
+<img src = "https://user-images.githubusercontent.com/97611290/217012264-07371776-0e97-461c-b13a-34a0e25f9d03.png" width="150" height="300" /><img src = "https://user-images.githubusercontent.com/97611290/217012279-e58d83c9-d666-4d9a-9d4b-fcdbd2612f49.png" width="150" height="300" /><img src = "https://user-images.githubusercontent.com/97611290/217012297-2691f098-61b5-49c8-9c43-313c0d6bbd28.png" width="150" height="300" /><img src = "https://user-images.githubusercontent.com/97611290/217012438-5ce0dcda-5380-4a39-aff3-e0911ba3fb19.png" width="150" height="300" /><img src = "https://user-images.githubusercontent.com/97611290/217009763-223f617f-2904-4d4a-a2a5-b83dbe84cd78.png" width="150" height="300" /> <img src = "https://user-images.githubusercontent.com/97611290/217012465-08353d37-6c41-46a9-aa4c-a1c0f9be7b24.png" width="150" height="300" /><img src = "https://user-images.githubusercontent.com/97611290/217012453-61af9231-eb81-49cd-b666-436f0244e0ce.png" width="150" height="300" />
 
 
 
