@@ -1,7 +1,9 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:collection/collection.dart';
 import 'package:flutter/material.dart';
+import 'package:image_picker/image_picker.dart';
 import 'package:my_recipe_app/screens/meals_screen/screens/orders_screen.dart';
 import 'package:razorpay_flutter/razorpay_flutter.dart';
 import './orders_screen.dart';
@@ -81,7 +83,7 @@ class _CartScreenState extends State<CartScreen> {
         .delete();
   }
 
-  _getShoppingIngredients() {
+  _getShoppingIngredients() async {
     FirebaseFirestore.instance
         .collection('shoppingCart')
         .doc(user!.uid)
@@ -113,14 +115,13 @@ class _CartScreenState extends State<CartScreen> {
   var sortMapByValue = {};
 
   _sort() {
-    print('callingtotal ');
-    _getTotal();
     setState(() {
       sortMapByValue = Map.fromEntries(qtyCounts.entries.toList()
         ..sort((e1, e2) => e2.value.compareTo(e1.value)));
 
       qtyCounts = sortMapByValue;
     });
+    _getTotal();
   }
 
   _setShoppingCart() {
@@ -182,19 +183,30 @@ class _CartScreenState extends State<CartScreen> {
 
   Map<dynamic, dynamic> allPricedCart = {};
 
-  List totalPrice = [];
+  List<int> totalPrice = [];
+
   dynamic sum;
 
   _getTotal() {
-    qtyCounts.forEach((key, value) {
-      if (allPricedIngredients.containsKey(key)) {
-        var cal = allPricedIngredients[key] * qtyCounts[key];
-        totalPrice.add(cal);
-      }
-    });
+    //sum = totalPrice.fold(sum, (sum, element) => sum! + element);
+    //
 
-    sum = totalPrice.reduce((value, element) => value + element);
-    print(sum);
+    if(totalPrice.isEmpty) {
+      qtyCounts.forEach((key, value) {
+        if (allPricedIngredients.containsKey(key)) {
+          var cal = allPricedIngredients[key] * qtyCounts[key];
+          totalPrice.add(cal);
+        }
+      });
+
+      
+    }
+    final int result = totalPrice.fold(0, (sum, element) => sum + element);
+    
+    setState(() {sum = result;});
+
+    print(qtyCounts);
+
     //return sum;
   }
 
