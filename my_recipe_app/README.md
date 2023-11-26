@@ -1,4 +1,4 @@
-# Recipe App in Flutter
+# Recipe App using Flutter
 
 ## Developed by
 
