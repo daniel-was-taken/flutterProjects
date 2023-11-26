@@ -15,8 +15,6 @@ https://github.com/PremTatkari
 <img src = "https://user-images.githubusercontent.com/97611290/217009763-223f617f-2904-4d4a-a2a5-b83dbe84cd78.png" width="200" height="400" />                       <img src = "https://user-images.githubusercontent.com/97611290/217012465-08353d37-6c41-46a9-aa4c-a1c0f9be7b24.png" width="200" height="400" />                       <img src = "https://user-images.githubusercontent.com/97611290/217012453-61af9231-eb81-49cd-b666-436f0244e0ce.png" width="200" height="400" />
 
 
-
-
 ## Users can
 1. Add their own recipes
 2. View recipes uploaded by other users 
